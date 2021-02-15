@@ -30,8 +30,17 @@
     /*custom css*/
     
     .card {
+        display: flex;
+        overflow: hidden;
         height: 200px;
         width: 100px;
+    }
+    
+    .cardPortrait {
+        /* overflow: hidden; */
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     @keyframes App-logo-spin {
