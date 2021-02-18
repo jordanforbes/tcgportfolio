@@ -32,6 +32,17 @@
     .card {
         display: flex;
         overflow: hidden;
+        height: 190px;
+        width: 90px;
+        display: block;
+        float: left;
+        opacity: 50%;
+        border: 5px solid silver;
+    }
+    
+    .card:hover {
+        opacity: 100%;
+        border: 0;
         height: 200px;
         width: 100px;
     }
@@ -41,6 +52,23 @@
         height: 200px;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .deck {
+        float: left;
+        display: block;
+        /* border: 4px green dotted; */
+        width: 200px;
+        height: 500px;
+    }
+    
+    .inspect {
+        display: block;
+        float: left;
+    }
+    
+    .inspectPortrait {
+        height: 500px;
     }
     
     @keyframes App-logo-spin {

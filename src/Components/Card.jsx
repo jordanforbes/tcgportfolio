@@ -1,17 +1,26 @@
 import React from 'react';
-import image from '../Assets/Bernie.jpg';
 
-const CardPortrait = ()=> {
-    return (<img src={image} 
+const CardPortrait = (props)=> {
+    return (<img src={props.imgSrc} 
             className="cardPortrait"
             alt="Bernie"
         />);
 }
 
-const Card =()=>{
-    return (<div className="card">
-        <CardPortrait />
-    </div>)
+const Card =(props)=>{
+    const check=()=>{
+        console.log("clicked")
+        // changeBigImg()
+        
+    }
+    return (
+        <div 
+            className="card"
+            onClick={check}
+        >
+            <CardPortrait imgSrc={props.imgSrc}/>
+        </div>
+    )
 }
 
 export default Card
